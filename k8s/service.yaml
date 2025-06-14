@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: referral-ai-backend
+  namespace: referral-ai
+spec:
+  selector:
+    app: referral-ai-backend
+  ports:
+  - port: 80
+    targetPort: 3000
+  type: ClusterIP 
