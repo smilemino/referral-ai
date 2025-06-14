@@ -1,3 +1,5 @@
+import eslintPluginTs from '@typescript-eslint/eslint-plugin';
+
 export default [
   {
     files: ['**/*.ts', '**/*.tsx'],
@@ -8,7 +10,7 @@ export default [
       },
     },
     plugins: {
-      '@typescript-eslint': require('@typescript-eslint/eslint-plugin'),
+      '@typescript-eslint': eslintPluginTs,
     },
     rules: {
       // 원하는 규칙 추가
